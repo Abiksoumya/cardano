@@ -89,3 +89,10 @@ class VerificationKeyHash(ConstrainedBytes):
     """Hash of a Cardano verification key."""
 
     MAX_SIZE = MIN_SIZE = VERIFICATION_KEY_HASH_SIZE
+
+
+
+class ScriptHash(ConstrainedBytes):
+    """Hash of a policy/plutus script."""
+
+    MAX_SIZE = MIN_SIZE = SCRIPT_HASH_SIZE
