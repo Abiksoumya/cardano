@@ -25,3 +25,7 @@ class Network(CBORSerializable, Enum):
     @limit_primitive_type(int)
     def from_primitive(cls: Type[Network], value: int) -> Network:
         return cls(value)
+
+
+
+ 

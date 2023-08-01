@@ -25,6 +25,10 @@ __all__ = [
     "PaymentExtendedVerificationKey",
     "PaymentSigningKey",
     "PaymentVerificationKey",
+    "StakeExtendedSigningKey",
+    "StakeExtendedVerificationKey",
+    "StakeSigningKey",
+    "StakeVerificationKey",
     
 ]
 
@@ -233,3 +237,21 @@ class PaymentExtendedSigningKey(ExtendedSigningKey):
 class PaymentExtendedVerificationKey(ExtendedVerificationKey):
     KEY_TYPE = "PaymentExtendedVerificationKeyShelley_ed25519_bip32"
     DESCRIPTION = "Payment Verification Key"
+
+
+class StakeSigningKey(SigningKey):
+    KEY_TYPE = "StakeSigningKeyShelley_ed25519"
+    DESCRIPTION = "Stake Signing Key"
+
+class StakeVerificationKey(VerificationKey):
+    KEY_TYPE = "StakeVerificationKeyShelley_ed25519"
+    DESCRIPTION = "Stake Verification Key"
+
+class StakeExtendedSigningKey(ExtendedSigningKey):
+    KEY_TYPE = "StakeExtendedSigningKeyShelley_ed25519_bip32"
+    DESCRIPTION = "Stake Signing Key"
+
+
+class StakeExtendedVerificationKey(ExtendedVerificationKey):
+    KEY_TYPE = "StakeExtendedVerificationKeyShelley_ed25519_bip32"
+    DESCRIPTION = "Stake Verification Key"
